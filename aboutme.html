@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio - M.A.W.E.E.</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            height: 15vh;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .logo-icon{
+            width: 50px;
+            height: 50px;
+        }
+
+        nav .menu ul{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+        }
+
+        nav .menu li{
+            list-style: none;
+            margin-left: 15px;
+            margin-right: 15px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #6298BC
+        }
+
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-section {
+            margin: 50px auto;
+            max-width: 900px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #007bff;
+        }
+        .header-text {
+            font-size: 28px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .info-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        .message {
+            margin-top: 20px;
+            font-style: italic;
+        }
+        .btn-custom {
+            margin-top: 15px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 20px;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav style="background-color: #071C34;">
+        <div class="logo">
+            <img src="./img/logo/dolphin.png" alt="" class="logo-icon">
+        </div>
+        <div class="menu" style="color: #055fa8">
+            <ul>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./acknowledgement.html"><li>Acknowledgement</li></a>
+                <a href="./projects.html"><li>Readings</li></a>
+                <a href="./gallery_homepage.html"><li>Journal</li></a>
+                <a href="./services.html"><li>Services</li></a>
+                <a href="./resume.html"><li>Resume</li></a>
+                <a href="./exp.html"><li>Experiences</li></a>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="about-section row">
+            <!-- First Column: Profile Picture -->
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+            
+            <!-- Second Column: Introduction and Information -->
+            <div class="col-md-8">
+                <div class="header-text mb-3">Hello, I'm [Your Name]!</div>
+                <p>I am a passionate pre-service teacher dedicated to helping students discover their potential and foster a love for learning. Equipped with essential skills and a strong educational background, I aim to make a meaningful impact in the classroom.</p>
+
+                <div class="info-title">Personal Information</div>
+                <ul>
+                    <li><strong>Age:</strong> 22</li>
+                    <li><strong>Email:</strong> yourname@example.com</li>
+                    <li><strong>Location:</strong> Zamboanga City, Philippines</li>
+                </ul>
+
+                <div class="info-title">Skills</div>
+                <ul>
+                    <li>Lesson Planning and Delivery</li>
+                    <li>Classroom Management</li>
+                    <li>Creative and Critical Thinking</li>
+                    <li>Communication and Collaboration</li>
+                </ul>
+
+                <div class="info-title">Education</div>
+                <ul>
+                    <li><strong>Degree:</strong> Bachelor of Secondary Education Major in English</li>
+                    <li><strong>Institution:</strong> Western Mindanao State University (WMSU)</li>
+                    <li><strong>Year:</strong> 2024</li>
+                </ul>
+                
+                <div class="message">"I invite you to explore my full resume, projects, and services where I showcase my dedication and skills as a pre-service teacher. Let’s make learning engaging, inspiring, and impactful!"</div>
+                
+                <a href="resume.pdf" class="btn btn-custom" target="_blank">View My Resume</a>
+                <a href="#projects" class="btn btn-custom">View My Projects</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

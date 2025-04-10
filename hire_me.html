@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio - M.A.W.E.E.</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0d1b2a;
+            color: #ffffff;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .first{
+            max-width: 25%;
+        }
+        .second{
+            max-width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .third{
+            max-width: 25%;
+        }
+
+        .profile-section, .info-section, .resume-section, .projects-section, .contact-section {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .profile-section{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            border-bottom: 2px solid #1e90ff;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: #1c4b82;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #123a62;
+        }
+
+        .card {
+            background-color: #1b263b;
+            border: none;
+        }
+
+        .card-title, .card-text {
+            color: #ffffff;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #1e90ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="first">
+        <!-- Information Section -->
+        <div class="info-section">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                Brief summary about yourself, your expertise, and your professional journey. 
+                Mention your skills, achievements, and your passion for delivering value to clients.
+            </p>
+        </div>
+
+        <!-- Resume Section -->
+        <div class="resume-section">
+            <h2 class="section-title">Resume</h2>
+            <p>
+                A concise summary of your professional experience, educational background, and technical skills. 
+                Click below to view my complete resume.
+            </p>
+            <a href="./resume.html" class="btn btn-primary">View Resume</a>
+        </div>
+    </div>
+    
+    <div class="second">
+        <!-- Profile Section -->
+        <div class="profile-section text-center">
+            <img src="your-profile-photo.jpg" alt="Your Profile Photo" class="profile-img mb-4">
+            <h1>Marwa A. Abdilla</h1>
+            <p>Job Title or Expertise (e.g., Software Developer, Graphic Designer)</p>
+        </div>
+    </div>
+
+    <div class="third">
+        <!-- Projects Section -->
+        <div class="projects-section">
+            <h2 class="section-title">My Projects</h2>
+            <p>
+                Showcase of my previous work, demonstrating my skills and creativity. 
+                Click below to explore my portfolio in detail.
+            </p>
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2 class="section-title">Contact Me</h2>
+            <p>
+                Interested in working together? Feel free to reach out via email or connect with me on social media.
+            </p>
+            <ul class="list-unstyled">
+                <li>Email: <a href="mailto:your-email@example.com" class="text-white">your-email@example.com</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" class="text-white" target="_blank">linkedin.com/in/yourprofile</a></li>
+                <li>GitHub: <a href="https://github.com/yourgithub" class="text-white" target="_blank">github.com/yourgithub</a></li>
+            </ul>
+        </div>
+    </div>    
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
